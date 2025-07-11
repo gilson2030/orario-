@@ -1,3 +1,13 @@
+function mostrarGrade(grade) {
+  // Exemplo: atualiza a tabela (coloque seu código real aqui)
+  document.getElementById("grade").innerHTML = "<tr><td>Grade exibida!</td></tr>";
+}
+function abrirCadastro() {
+  alert("Cadastro funcionando!");
+}
+function abrirDisponibilidade() {
+  alert("Disponibilidade funcionando!");
+}
 // ============ VARIÁVEIS E BASE DO SISTEMA ============
 const horarios = ["07:00-07:50", "07:50-08:40", "08:55-09:45", "09:45-10:35", "10:50-11:40"];
 const dias = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"];
