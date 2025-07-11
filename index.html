@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Plataforma de Horários Escolar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json"> <!-- Para PWA/mobile -->
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="logo.png" style="height:32px;vertical-align:middle;"> 
+      Super Plataforma de Horários Escolar
+    </h1>
+    <div id="painel-botoes">
+      <button class="btn" onclick="abrirCadastro()">Cadastro</button>
+      <button class="btn" onclick="abrirDisponibilidade()">Disponibilidade</button>
+      <button class="btn" onclick="abrirBloqueio()">Bloqueio</button>
+      <button class="btn" onclick="abrirSalas()">Salas</button>
+      <button class="btn" onclick="abrirPreferencias()">Preferências</button>
+      <button class="btn" onclick="abrirMural()">Mural/Chat</button>
+      <button class="btn" onclick="abrirAjuda()">Ajuda/FAQ</button>
+      <button class="btn" onclick="abrirSimulados()">Simulados</button>
+      <button class="btn" onclick="abrirModoAluno()">Modo Aluno/QR</button>
+      <button class="btn" onclick="abrirRelatorioAvancado()">Relatório Avançado</button>
+      <button class="btn" onclick="abrirConferirConflitos()">Conferir Conflitos</button>
+      <button class="btn" onclick="abrirVisualizarProf()">Por Professor</button>
+      <button class="btn" onclick="ativarModoLivre()">Grade Livre</button>
+      <button class="btn" onclick="dashboardEstatisticas()">Dashboard</button>
+      <button class="btn" onclick="abrirBackup()">Backup/Nuvem</button>
+      <button class="btn" onclick="abrirPersonalizarImpressao()">Impressão Pro</button>
+      <button class="btn" onclick="abrirObservacoes()">Observações</button>
+      <button class="btn" onclick="gerarGrade()">Gerar Grade</button>
+      <button class="btn" onclick="imprimirGrade()">Imprimir</button>
+      <button class="btn" onclick="exportarExcel()">Excel</button>
+      <button class="btn" onclick="exportarPDF()">PDF</button>
+      <button class="btn" onclick="exportarImagem()">Imagem</button>
+      <button class="btn" onclick="salvarHorario()">Salvar</button>
+      <button class="btn" onclick="carregarHorario()">Carregar</button>
+      <button class="btn" onclick="exportarGoogleAgenda()">Google Agenda</button>
+      <button class="btn" onclick="enviarEmail()">E-mail</button>
+      <button class="btn" onclick="notificacaoPush()">Push</button>
+    </div>
+    <div id="grade-container">
+      <table id="grade"></table>
+    </div>
+    <div id="qrcode-area"></div>
+    <div id="dashboard-area"></div>
+  </div>
+  <div id="modais"></div>
+  <!-- Bibliotecas externas -->
+  <script src="xlsx.full.min.js"></script>
+  <script src="jspdf.umd.min.js"></script>
+  <script src="html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
 
