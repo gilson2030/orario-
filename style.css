@@ -1,1 +1,84 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fa;
+  margin: 0; padding: 0;
+}
+.container {
+  max-width: 1180px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px #0001;
+  padding: 18px 10px 24px 10px;
+}
+h1 {
+  text-align: center;
+  color: #1b377b;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+#painel-botoes { 
+  display: flex; flex-wrap: wrap; gap: 5px; justify-content: center; margin-bottom: 12px; 
+}
+.btn {
+  background: #3353d3;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 7px 2px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #aaa3;
+}
+.btn:hover { background: #213479; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fcfdff;
+  font-size: 1em;
+  box-shadow: 0 2px 12px #7a83a85c;
+  border-radius: 9px;
+  overflow: hidden;
+}
+th, td {
+  border: 1px solid #b5bddb;
+  padding: 8px 5px;
+  text-align: center;
+}
+th {
+  background: #3353d3;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.turma-head { background: #e3e8fd; color: #1b377b; font-weight: 700;}
+td.vazio { background: #f6f6fa; color: #c8c8c8;}
+.disciplina { font-weight: 700; }
+.professor { font-size: .92em; color: #5767c6;}
+.sala { font-size: .85em; color: #b66b13;}
+.legenda, .faq, .mural, .dashboard { background: #f9f9fb; margin: 14px 0; border-radius: 8px; padding: 12px 16px; font-size: 1em; color: #333; box-shadow: 0 1px 6px #bbba;}
+.modal-bg { position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(40,35,65,0.12); display: flex; align-items: center; justify-content: center;}
+.modal { background: #fff; padding: 24px 12px; border-radius: 12px; max-width: 690px; width: 97vw; box-shadow: 0 8px 48px #3335; position: relative;}
+.fechar { position: absolute; right: 15px; top: 8px; color: #233; font-size: 2.2em; cursor: pointer; font-weight: 700;}
+.qrcode { margin: 12px auto; display: block; }
+@media (max-width: 650px) {
+  .container { padding: 2px 2vw 8px 2vw;}
+  #painel-botoes {flex-direction: column; gap: 2px;}
+  table, th, td { font-size: .89em;}
+}
+.grade-livre-on td, .grade-livre-on th { cursor: pointer; transition: background 0.13s;}
+.grade-livre-on td.editavel:hover { background: #e5f5d2 !important; outline: 2px dashed #4eaf39;}
+.grade-livre-on td.bloqueada { background: #fa6363 !important; color: #fff;}
+.conf-alert { color: #fff; background: #f44336; padding: 7px 13px; border-radius: 5px; margin-bottom:8px; font-weight:600;}
+.sucesso-alert { color: #155724; background: #b6f5ca; padding: 7px 13px; border-radius: 5px; margin-bottom:8px; font-weight:600;}
+.prof-btn { background:#e8e8fe; color:#283583; border:none; margin:3px 4px; border-radius:5px; padding:6px 10px; cursor:pointer; }
+.prof-btn:hover { background:#d1cfff; }
+.observacao-cell { background: #fff9b4 !important; color: #a19c1a !important;}
+.faq-q { font-weight: 600; color: #2443be;}
+.faq-a { margin-bottom: 8px; }
+.dashboard-c { display: inline-block; background: #ebf4ff; border-radius: 8px; margin: 8px; padding: 12px 18px; color: #2e3c8c;}
+.mural-msg { background: #e3e8fd; margin: 4px 0; padding: 6px 10px; border-radius: 6px;}
 
